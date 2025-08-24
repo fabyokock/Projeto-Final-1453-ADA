@@ -187,6 +187,32 @@ footer {
   padding: 20px;
 }
 
+/* MENU DESCRIÇÃO E FICHA TÉCNICA */
+
+.descricao-produto summary,
+.ficha-tecnica {
+  cursor: pointer;
+}
+
+.descricao-produto summary::before {
+  content: "Descrição do produto ";
+  font-weight: bold;
+}
+
+.ficha-tecnica summary::before {
+  content: "Ficha técnica ";
+  font-weight: bold;
+}
+
+.descricao-produto[open] summary::before,
+.ficha-tecnica[open] summary::before {
+  content: "− "; /* Muda para '-' quando o menu está aberto */
+}
+
+summary h4 {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
