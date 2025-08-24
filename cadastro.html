@@ -12,29 +12,24 @@
 
     <meta name="author" content="Loja FK Music" />
 
-    <link rel="stylesheet" href="cadastro-simples.css" />
+    <link rel="stylesheet" href="cadastro.css" />
   </head>
 
   <body>
     <header id="topo">
-      <nav>
-        <figure>
-          <img src="logo_fk-music.png" alt="FK MUSIC" width="150" />
-        </figure>
-
-        <ul>
-          <li><a href="index.html">Principais ofertas do dia</a></li>
-
-          <li><a href="cadastro.html">Cadastro</a></li>
-
-          <li><a href="catalogo.html">Catálogo de produtos</a></li>
-        </ul>
-      </nav>
-
       <h1>FK MUSIC</h1>
 
       <h2>A sua loja de intrumentos musicais</h2>
     </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Principais ofertas do dia</a></li>
+
+        <li><a href="cadastro.html">Cadastro</a></li>
+
+        <li><a href="catalogo.html">Catálogo de produtos</a></li>
+      </ul>
+    </nav>
 
     <hr />
 
@@ -47,152 +42,150 @@
       <h3>📝 Formulário de Cadastro – Pessoa Física</h3>
 
       <form action="" method="get">
-        <h4>1. Dados Pessoais</h4>
-
-        <div>
-          <label for="nomeCompleto">Nome completo:</label>
+        <section>
+          <h4>1. Dados Pessoais</h4>
+          <div>
+            <label for="nomeCompleto">Nome completo:</label>
+            <br />
+            <input
+              type="text"
+              id="nomeCompleto"
+              placeholder="Seu nome completo aqui..."
+            />
+          </div>
           <br />
-          <input
-            type="text"
-            id="nomeCompleto"
-            placeholder="Seu nome completo aqui..."
-          />
-        </div>
-        <br />
-        <div>
-          <label for="cpf">CPF:</label>
+          <div>
+            <label for="cpf">CPF:</label>
+            <br />
+            <input type="number" id="cpf" placeholder="000.000.000-00" />
+          </div>
           <br />
-          <input type="number" id="cpf" placeholder="000.000.000-00" />
-        </div>
-        <br />
-        <div>
-          <label for="dataNascimento">Data de nascimento:</label>
+          <div>
+            <label for="dataNascimento">Data de nascimento:</label>
+            <br />
+            <input type="date" id="dataNascimento" />
+          </div>
           <br />
-          <input type="date" id="dataNascimento" />
-        </div>
+          <div>
+            <label>Gênero (opcional):</label><br />
+            <input type="radio" id="masculino" name="genero" value="M" />
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="F" />
+            <label for="feminino">Feminino</label>
+            <input
+              type="radio"
+              id="naoInformado"
+              name="genero"
+              value="Não informado"
+            />
+            <label for="naoInformado">Prefiro não informar</label>
+          </div>
+        </section>
+
         <br />
-        <div>
-          <label>Gênero (opcional):</label><br />
 
-          <input type="radio" id="masculino" name="genero" value="M" />
-          <label for="masculino">Masculino</label>
-
-          <input type="radio" id="feminino" name="genero" value="F" />
-          <label for="feminino">Feminino</label>
-
-          <input
-            type="radio"
-            id="naoInformado"
-            name="genero"
-            value="Não informado"
-          />
-          <label for="naoInformado">Prefiro não informar</label>
-        </div>
-        <br />
-        <h4>2.Contato</h4>
-
-        <div>
-          <label for="email">E-mail:</label>
+        <section>
+          <h4>2.Contato</h4>
+          <div>
+            <label for="email">E-mail:</label>
+            <br />
+            <input type="email" id="email" placeholder="email@email.com.br" />
+          </div>
           <br />
-          <input type="email" id="email" placeholder="email@email.com.br" />
-        </div>
-        <br />
-
-        <div>
-          <label for="celular">Telefone celular:</label>
+          <div>
+            <label for="celular">Telefone celular:</label>
+            <br />
+            <input type="tel" id="celular" placeholder="00 00000-0000" />
+          </div>
           <br />
-          <input type="tel" id="celular" placeholder="00 00000-0000" />
-        </div>
+          <div>
+            <label for="telefoneFixo">Telefone fixo (opcional):</label>
+            <br />
+            <input type="tel" id="telefoneFixo" placeholder="00 0000-0000" />
+          </div>
+        </section>
+
         <br />
 
-        <div>
-          <label for="telefoneFixo">Telefone fixo (opcional):</label>
+        <section>
+          <h4>3. Endereço de Entrega</h4>
           <br />
-          <input type="tel" id="telefoneFixo" placeholder="00 0000-0000" />
-        </div>
-        <br />
-
-        <h4>3. Endereço de Entrega</h4>
-        <br />
-        <div>
-          <label for="endereco">Rua / Avenida (com nº):</label>
+          <div>
+            <label for="endereco">Rua / Avenida (com nº):</label>
+            <br />
+            <input type="text" id="endereco" />
+          </div>
           <br />
-          <input type="text" id="endereco" />
-        </div>
-        <br />
-
-        <div>
-          <label for="bairro">Bairro:</label>
+          <div>
+            <label for="bairro">Bairro:</label>
+            <br />
+            <input type="text" id="bairro" />
+          </div>
           <br />
-          <input type="text" id="bairro" />
-        </div>
-        <br />
-
-        <div>
-          <label for="cidade">Cidade:</label>
+          <div>
+            <label for="cidade">Cidade:</label>
+            <br />
+            <input type="text" id="cidade" />
+          </div>
           <br />
-          <input type="text" id="cidade" />
-        </div>
-        <br />
-
-        <div>
-          <label for="cep">CEP:</label>
+          <div>
+            <label for="cep">CEP:</label>
+            <br />
+            <input type="number" id="cep" placeholder="00.000.000" />
+          </div>
           <br />
-          <input type="number" id="cep" placeholder="00.000.000" />
-        </div>
+          <div>
+            <label for="referencia">Ponto de referência:</label>
+            <br />
+            <textarea
+              id="referencia"
+              placeholder="Facilite a entrega informando um ponto de referência."
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </section>
+
         <br />
 
-        <div>
-          <label for="referencia">Ponto de referência:</label>
+        <section>
+          <h4>4. Forma de Pagamento</h4>
+          <div>
+            <label for="pagamento">Opções de pagamento:</label>
+            <br /><br />
+            <input type="radio" id="credito" name="pagamento" value="C" />
+            <label for="credito">Cartão de crédito</label>
+            <br />
+            <input type="radio" id="boleto" name="pagamento" value="B" />
+            <label for="boleto">Boleto bancário</label>
+            <br />
+            <input type="radio" id="pix" name="pagamento" value="P" />
+            <label for="pix">PIX</label>
+          </div>
+        </section>
+
+        <br />
+
+        <section>
+          <h4>5. Confirmação</h4>
+          <div>
+            <label for="senha">Digite sua senha para confirmar a compra:</label>
+            <br /><br />
+            <input type="password" id="senha" />
+          </div>
           <br />
-          <textarea
-            id="referencia"
-            placeholder="Facilite a entrega informando um ponto de referência."
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-
-        <br />
-
-        <h4>4. Forma de Pagamento</h4>
-
-        <div>
-          <label for="pagamento">Opções de pagamento:</label>
-          <br /><br />
-
-          <input type="radio" id="credito" name="pagamento" value="C" />
-          <label for="credito">Cartão de crédito</label>
-          <br />
-
-          <input type="radio" id="boleto" name="pagamento" value="B" />
-          <label for="boleto">Boleto bancário</label>
-          <br />
-
-          <input type="radio" id="pix" name="pagamento" value="P" />
-          <label for="pix">PIX</label>
-        </div>
-
-        <br />
-
-        <h4>5. Confirmação</h4>
-
-        <div>
-          <label for="senha">Digite sua senha para confirmar a compra:</label>
-          <br /><br />
-          <input type="password" id="senha" />
-        </div>
-        <br />
-
-        <div class="botaoEnviarDados">
-          <input type="submit" id="enviar" name="enviar" value="Enviar dados" />
-        </div>
+          <div class="botaoEnviarDados">
+            <input
+              type="submit"
+              id="enviar"
+              name="enviar"
+              value="Enviar dados"
+            />
+          </div>
+        </section>
       </form>
     </main>
     <br /><br />
-
-    <hr />
-    <hr />
 
     <footer>
       <p>
@@ -204,8 +197,5 @@
         FK MUSIC - Sempre os melhores preços e os melhores produtos para você!
       </p>
     </footer>
-
-    <hr />
-    <hr />
   </body>
 </html>
