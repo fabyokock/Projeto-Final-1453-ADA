@@ -34,13 +34,20 @@ header {
   text-align: center;
 }
 
-header h1,
+header h1 {
+  color: #038533;
+  font-size: 48px;
+  margin: 0px;
+}
+
 header h2 {
-  margin: 10px;
+  font-size: 14px;
+  margin: -10px;
+  margin-bottom: 10px;
 }
 
 nav {
-  background-color: #444;
+  background-color: #000;
 
   padding: 5px;
 
@@ -111,7 +118,9 @@ tbody tr:hover {
 }
 
 .botaoNav {
-  background-color: #006699;
+  background-color: #038533;
+
+  margin-left: 70px;
 
   padding: 10px 20px;
 
@@ -123,7 +132,7 @@ tbody tr:hover {
 }
 
 button:hover {
-  background-color: #003a57;
+  background-color: #04a32c;
 }
 
 .botaoNav a {
@@ -145,11 +154,11 @@ footer {
 
 @media (max-width: 768px) {
   header h1 {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   header h2 {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   nav ul li a {
@@ -164,5 +173,9 @@ footer {
   .botaoNav {
     display: block;
     margin: 10px auto;
+  }
+
+  table {
+    width: 60%;
   }
 }
