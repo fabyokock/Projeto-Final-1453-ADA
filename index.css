@@ -42,6 +42,11 @@ header h1 {
   margin: 0px;
 }
 
+header h1 a {
+  color: #038533;
+  text-decoration: none;
+}
+
 header h2 {
   font-size: 14px;
   margin: -10px;
