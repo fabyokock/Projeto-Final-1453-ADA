@@ -140,3 +140,29 @@ footer {
 
   padding: 20px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .botaoNav {
+    display: block;
+    margin: 10px auto;
+  }
+}
