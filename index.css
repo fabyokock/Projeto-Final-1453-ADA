@@ -204,9 +204,12 @@ footer {
   font-weight: bold;
 }
 
-.descricao-produto[open] summary::before,
+.descricao-produto[open] summary::before {
+  content: "Descrição do produto ";
+}
+
 .ficha-tecnica[open] summary::before {
-  content: "− "; /* Muda para '-' quando o menu está aberto */
+  content: "Ficha técnica ";
 }
 
 summary h4 {
