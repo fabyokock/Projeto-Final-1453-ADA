@@ -93,14 +93,14 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Seções de produtos */
+/* Seções de produtos - DESTAQUES */
 
 main {
   max-width: 900px;
 
   margin: 20px auto;
 
-  padding: 0 20px;
+  padding: 10px 20px;
 
   background-color: #fff;
 }
@@ -177,6 +177,8 @@ button:hover {
   font-weight: bold;
 }
 
+/* RODAPÉ */
+
 footer {
   background-color: #333;
 
@@ -187,7 +189,7 @@ footer {
   padding: 20px;
 }
 
-/* MENU DESCRIÇÃO E FICHA TÉCNICA */
+/* MENU 'sanfona' - DESCRIÇÃO E FICHA TÉCNICA */
 
 .descricao-produto summary,
 .ficha-tecnica {
@@ -216,7 +218,7 @@ summary h4 {
   display: none;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES <= 768px */
 
 @media (max-width: 768px) {
   header h1 {
